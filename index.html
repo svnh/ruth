@@ -1,0 +1,66 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ROOOOOOOOO</title>
+</head>
+
+<body id="background">
+  <script type="text/javascript">
+    var images = ['roo.jpg', 'rooo.jpg', 'roooo.jpg', 'rooooo.jpg', 'roooooo.jpg'];
+    var quotes = [
+      "Pizza?",
+      "Donnnnnn",
+      "Like, whatever",
+      "I'm a mermaid!",
+      "Fu in the woods",
+      "Si!",
+      "Wait, did I mention that It's Birthday Month!!!!!",
+      "I like more foods now! ...bread, eggos, nachos, cereal, pizza, pizza, pizza",
+      "Snikadooo dubaadedad yadadadooo dee dee"
+    ];
+    var colors = ['pink', 'lightgreen', 'lightblue'];
+
+    window.setInterval(function() {
+      document.getElementById('rooFace').src = images[Math.floor(Math.random() * images.length)];
+      document.getElementById('quote').innerHTML = quotes[Math.floor(Math.random() * quotes.length)];
+    }, 3000);
+
+    window.setInterval(function() {
+      document.getElementById('background').style.background = colors[Math.floor(Math.random() * colors.length)];
+    }, 1000);
+  </script>
+
+  <style type="text/css">
+    img {
+      width: 300px;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .big {
+      font-size: 24px;
+    }
+
+    .italic {
+      font-style: italic;
+    }
+
+    .background {
+      background-color: red;
+    }
+  </style>
+
+  <div class="center">
+    <h1>ROOOOO!</h1>
+    <p class="italic">Big Smart Rooo Sayings From Roo Herself</p>
+    <div class="center big">
+      <span>"</span><span id="quote">It's Birthday Month!!!!!</span><span>" - BDR</span>
+    </div>
+    <img id="rooFace" src="roo.jpg"></img>
+  </div>
+</body>
+</html>
